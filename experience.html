@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Experience, Certifications & Awards | Angel Sapotalo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f5f7fb;
+  color: #1f2937;
+}
+
+.container {
+  max-width: 980px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* BACK BUTTON */
+.back-button {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+/* CARDS */
+.card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #4f46e5;
+}
+
+/* COMPANY STRUCTURE */
+.company {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.company img {
+  width: 70px;
+}
+
+.sub {
+  margin-left: 90px;
+  margin-top: 18px;
+}
+
+.item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.item img {
+  width: 44px;
+}
+
+/* LINKS */
+a.company-link {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a.company-link:hover {
+  text-decoration: underline;
+}
+
+/* CERTIFICATIONS & AWARDS */
+.credential {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 22px;
+}
+
+.credential img {
+  width: 110px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.credential img:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* CTA */
+.cta {
+  background: #4f46e5;
+  color: #ffffff;
+  text-align: center;
+  padding: 48px 24px;
+  border-radius: 16px;
+  margin-top: 40px;
+}
+
+.cta h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.cta a {
+  display: inline-block;
+  background: #ffffff;
+  color: #4f46e5;
+  padding: 12px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cta a:hover {
+  opacity: 0.9;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 36px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: #111827;
+  color: #d1d5db;
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="index.html" class="back-button">← Back to Main Page</a>
+
+<!-- QUALFON -->
+<div class="card">
+  <div class="company">
+    <img src="logo-qualfon.png" alt="Qualfon">
+    <div>
+      <h2>
+        <a class="company-link" href="https://www.qualfon.com/" target="_blank">
+          Qualfon Philippines
+        </a>
+      </h2>
+      <p>
+        Business Process Outsourcing company supporting enterprise clients
+        including Instacart and Gen Digital.
+      </p>
+    </div>
+  </div>
+
+  <div class="sub">
+    <div class="item">
+      <img src="logo-instacart.png" alt="Instacart">
+      <div>
+        <a class="company-link" href="https://www.instacart.com/" target="_blank">
+          Instacart
+        </a><br>
+        Customer support for orders, refunds, substitutions, and delivery concerns
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="logo-gendigital.png" alt="Gen Digital">
+      <div>
+        <a class="company-link" href="https://www.gendigital.com/us/en/" target="_blank">
+          Gen Digital
+        </a><br>
+        Cybersecurity customer support via Qualfon Philippines
+      </div>
+    </div>
+
+    <div class="sub">
+      <div class="item">
+        <img src="logo-norton.png" alt="Norton">
+        <div>
+          <a class="company-link" href="https://us.norton.com/" target="_blank">
+            Norton
+          </a>
+          — Cybersecurity & technical support
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="logo-lifelock.png" alt="LifeLock">
+        <div>
+          <a class="company-link" href="https://www.lifelock.com/" target="_blank">
+            LifeLock
+          </a>
+          — Identity theft handling & sales
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="logo-avast.png" alt="Avast">
+        <div>
+          <a class="company-link" href="https://www.avast.com/en-ph/index#pc" target="_blank">
+            Avast
+          </a>
+          — Antivirus support & pricing assistance
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CERTIFICATION -->
+<div class="card">
+  <h2>Certification</h2>
+  <div class="credential">
+    <img src="certificate-six-sigma.png" alt="Six Sigma Certification"
+         onclick="openModal(this.src)">
+    <div>
+      <strong>
+        <a class="company-link"
+           href="https://kaizen.com/training/lean-six-sigma-certification-training/"
+           target="_blank">
+          Six Sigma Green Belt – Kaizen Institute
+        </a>
+      </strong>
+      <p>Obtained through Qualfon Philippines</p>
+    </div>
+  </div>
+</div>
+
+<!-- AWARD -->
+<div class="card">
+  <h2>Awards & Recognition</h2>
+  <div class="credential">
+    <img src="gendigital-superstar.png" alt="Superstar of the Month"
+         onclick="openModal(this.src)">
+    <div>
+      <strong>Superstar of the Month – Gen Digital</strong>
+      <p>Recognized for outstanding performance and customer impact</p>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta">
+  <h2>Let’s Work Together</h2>
+  <a href="contact.html">Contact Me</a>
+</div>
+
+</div>
+
+<!-- MODAL -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="modal-close" onclick="closeModal()">&times;</span>
+  <img id="modalImage">
+</div>
+
+<footer>
+© 2026 Angel Sapotalo · Virtual Assistant
+</footer>
+
+<script>
+function openModal(src) {
+  document.getElementById("modalImage").src = src;
+  document.getElementById("imageModal").style.display = "flex";
+}
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
+</script>
+
+</body>
+</html>
