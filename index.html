@@ -13,7 +13,7 @@ body {
   color: #1f2937;
 }
 
-/* COVER */
+/* ===== COVER ===== */
 #cover {
   position: fixed;
   inset: 0;
@@ -57,7 +57,7 @@ body {
   cursor: pointer;
 }
 
-/* MAIN */
+/* ===== MAIN ===== */
 #main {
   display: none;
   animation: fadeIn 1s ease forwards;
@@ -68,7 +68,7 @@ body {
   to { opacity: 1; }
 }
 
-/* HEADER */
+/* ===== HEADER ===== */
 header {
   background: linear-gradient(135deg, #6366f1, #38bdf8);
   color: white;
@@ -84,18 +84,27 @@ header img {
   object-fit: cover;
 }
 
+header h1 {
+  margin-top: 15px;
+}
+
+.action-buttons {
+  margin-top: 20px;
+}
+
 .action-buttons a {
   display: inline-block;
-  margin: 10px;
+  margin: 8px;
   padding: 12px 24px;
   background: white;
   color: #4f46e5;
   text-decoration: none;
   font-weight: 600;
+  font-size: 13px;
   border-radius: 6px;
 }
 
-/* CONTENT */
+/* ===== CONTENT ===== */
 .container {
   max-width: 900px;
   margin: auto;
@@ -114,7 +123,7 @@ header img {
   color: #4f46e5;
 }
 
-/* SOCIALS */
+/* ===== SOCIALS ===== */
 .social-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
@@ -136,7 +145,7 @@ header img {
   width: 40px;
 }
 
-/* TOOLS */
+/* ===== TOOLS ===== */
 .tools-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(90px,1fr));
@@ -149,7 +158,7 @@ header img {
   opacity: 0.85;
 }
 
-/* FOOTER */
+/* ===== FOOTER ===== */
 footer {
   background: #111827;
   color: #d1d5db;
@@ -181,6 +190,9 @@ footer {
   <p>Virtual Assistant • Customer Support • Admin & CRM</p>
 
   <div class="action-buttons">
+    <a href="https://drive.google.com/file/d/YOUR_RESUME_LINK" target="_blank">Resume</a>
+    <a href="https://drive.google.com/file/d/YOUR_COVER_LETTER_LINK" target="_blank">Cover Letter</a>
+    <a href="#sample-works">Sample Works</a>
     <a href="experience.html">Experience</a>
   </div>
 </header>
@@ -192,8 +204,12 @@ footer {
     <h2>About Me</h2>
     <p>
       I’m Angel Sapotalo, a dedicated Virtual Assistant with experience in customer support,
-      administrative tasks, and daily operations. I genuinely enjoy helping people and
+      administrative tasks, and day‑to‑day operations. I genuinely enjoy helping people and
       supporting businesses so their work runs smoothly.
+    </p>
+    <p>
+      I value trust, clear communication, and reliability, and I take pride in being
+      detail‑oriented and easy to work with.
     </p>
     <p><em>I believe good work starts with trust, clear communication, and genuine effort.</em></p>
   </div>
@@ -201,27 +217,25 @@ footer {
   <!-- SOCIAL MEDIA -->
   <div class="card">
     <h2>Social Media Presence</h2>
-
     <div class="social-grid">
 
       <a class="social-card" href="https://www.facebook.com/angelsptl" target="_blank">
-        <img src="logo-facebook.png">
+        <img src="logo-facebook.png" alt="Facebook">
         <div><strong>Facebook</strong><br>7.7k followers</div>
       </a>
 
       <a class="social-card" href="https://www.tiktok.com/@angelsptl" target="_blank">
-        <img src="logo-tiktok.png">
+        <img src="logo-tiktok.png" alt="TikTok">
         <div><strong>TikTok</strong><br>1k followers</div>
       </a>
 
       <a class="social-card" href="https://www.instagram.com/imastyrofoamcup" target="_blank">
-        <img src="logo-instagram.png">
+        <img src="logo-instagram.png" alt="Instagram">
         <div><strong>Instagram</strong><br>477 followers</div>
       </a>
 
-      <!-- LINKEDIN USING PROFILE PHOTO -->
       <a class="social-card" href="https://www.linkedin.com/in/angel-sapotalo-084b8a2a6" target="_blank">
-        <img src="profile.png">
+        <img src="profile.png" alt="LinkedIn Profile">
         <div><strong>LinkedIn</strong><br>Professional Profile</div>
       </a>
 
@@ -231,21 +245,20 @@ footer {
   <!-- TOOLS -->
   <div class="card">
     <h2>Tools I Use</h2>
-
     <div class="tools-grid">
-      <img src="logo-google-workspace.png">
-      <img src="logo-microsoft.png">
-      <img src="logo-google-drive.png">
-      <img src="logo-salesforce.png">
-      <img src="logo-zendesk.png">
-      <img src="logo-ringcentral.png">
-      <img src="logo-zoom.png">
-      <img src="logo-google-meet.png">
-      <img src="logo-canva.png">
-      <img src="logo-html.png">
-      <img src="logo-chatgpt.png">
-      <img src="logo-copilot.png">
-      <img src="logo-gemini.png">
+      <img src="logo-google-workspace.png" alt="Google Workspace">
+      <img src="logo-microsoft.png" alt="Microsoft">
+      <img src="logo-google-drive.png" alt="Google Drive">
+      <img src="logo-salesforce.png" alt="Salesforce">
+      <img src="logo-zendesk.png" alt="Zendesk">
+      <img src="logo-ringcentral.png" alt="RingCentral">
+      <img src="logo-zoom.png" alt="Zoom">
+      <img src="logo-google-meet.png" alt="Google Meet">
+      <img src="logo-canva.png" alt="Canva">
+      <img src="logo-html.png" alt="HTML">
+      <img src="logo-chatgpt.png" alt="ChatGPT">
+      <img src="logo-copilot.png" alt="Copilot">
+      <img src="logo-gemini.png" alt="Gemini">
     </div>
   </div>
 
