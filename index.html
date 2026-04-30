@@ -6,7 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-/* ===== BASE ===== */
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
@@ -14,11 +13,11 @@ body {
   color: #1f2937;
 }
 
-/* ===== COVER PAGE ===== */
+/* COVER */
 #cover {
   position: fixed;
   inset: 0;
-  background-color: #f5f7fb;
+  background: #f5f7fb;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,38 +33,31 @@ body {
   font-size: 14px;
   letter-spacing: 3px;
   color: #6b7280;
-  margin-bottom: 16px;
 }
 
 .cover-name {
   font-size: 36px;
   font-weight: 700;
-  margin: 0;
+  margin: 12px 0;
 }
 
 .cover-role {
   font-size: 16px;
   color: #4b5563;
-  margin: 8px 0 32px;
+  margin-bottom: 32px;
 }
 
 .enter-btn {
   padding: 12px 30px;
-  border: none;
-  background-color: #4f46e5;
+  background: #4f46e5;
   color: white;
+  border: none;
   font-size: 14px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
   border-radius: 6px;
   cursor: pointer;
 }
 
-.enter-btn:hover {
-  background-color: #4338ca;
-}
-
-/* ===== MAIN CONTENT ===== */
+/* MAIN */
 #main {
   display: none;
   animation: fadeIn 1s ease forwards;
@@ -76,7 +68,7 @@ body {
   to { opacity: 1; }
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 header {
   background: linear-gradient(135deg, #6366f1, #38bdf8);
   color: white;
@@ -90,43 +82,20 @@ header img {
   border-radius: 50%;
   border: 5px solid white;
   object-fit: cover;
-  margin-bottom: 15px;
-}
-
-header h1 {
-  margin: 10px 0 5px;
-  font-size: 32px;
-}
-
-header p {
-  font-size: 18px;
-  margin: 0;
-}
-
-/* ===== ACTION BUTTONS ===== */
-.action-buttons {
-  margin-top: 20px;
 }
 
 .action-buttons a {
   display: inline-block;
-  margin: 8px;
+  margin: 10px;
   padding: 12px 24px;
   background: white;
   color: #4f46e5;
   text-decoration: none;
   font-weight: 600;
-  font-size: 13px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
   border-radius: 6px;
 }
 
-.action-buttons a:hover {
-  background-color: #eef2ff;
-}
-
-/* ===== SECTIONS ===== */
+/* CONTENT */
 .container {
   max-width: 900px;
   margin: auto;
@@ -145,12 +114,11 @@ header p {
   color: #4f46e5;
 }
 
-/* ===== SOCIAL MEDIA ===== */
+/* SOCIALS */
 .social-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
   gap: 20px;
-  margin-top: 20px;
 }
 
 .social-card {
@@ -168,11 +136,20 @@ header p {
   width: 40px;
 }
 
-.social-card:hover {
-  background-color: #f9fafb;
+/* TOOLS */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px,1fr));
+  gap: 28px;
+  justify-items: center;
 }
 
-/* ===== FOOTER ===== */
+.tools-grid img {
+  max-width: 70px;
+  opacity: 0.85;
+}
+
+/* FOOTER */
 footer {
   background: #111827;
   color: #d1d5db;
@@ -185,17 +162,17 @@ footer {
 
 <body>
 
-<!-- COVER PAGE -->
+<!-- COVER -->
 <div id="cover">
   <div class="cover-content">
     <div class="cover-mark">ANGELSPTL</div>
-    <h1 class="cover-name">Angel F. Sapotalo</h1>
+    <div class="cover-name">Angel F. Sapotalo</div>
     <div class="cover-role">Virtual Assistant · Customer Support · Admin</div>
     <button class="enter-btn" onclick="enterPortfolio()">Enter Portfolio</button>
   </div>
 </div>
 
-<!-- MAIN PAGE -->
+<!-- MAIN -->
 <div id="main">
 
 <header>
@@ -210,18 +187,13 @@ footer {
 
 <div class="container">
 
-  <!-- ABOUT ME -->
+  <!-- ABOUT -->
   <div class="card">
     <h2>About Me</h2>
     <p>
-      I’m Angel Sapotalo, a dedicated Virtual Assistant with experience in customer
-      support, administrative tasks, and daily operations. I genuinely enjoy helping
-      people—whether it’s managing enquiries, keeping things organized, or supporting
-      clients so their work runs more smoothly.
-    </p>
-    <p>
-      I value trust and clear communication and take pride in being reliable,
-      detail‑oriented, and easy to work with.
+      I’m Angel Sapotalo, a dedicated Virtual Assistant with experience in customer support,
+      administrative tasks, and daily operations. I genuinely enjoy helping people and
+      supporting businesses so their work runs smoothly.
     </p>
     <p><em>I believe good work starts with trust, clear communication, and genuine effort.</em></p>
   </div>
@@ -229,29 +201,51 @@ footer {
   <!-- SOCIAL MEDIA -->
   <div class="card">
     <h2>Social Media Presence</h2>
+
     <div class="social-grid">
 
       <a class="social-card" href="https://www.facebook.com/angelsptl" target="_blank">
-        <img src="logo-facebook.png" alt="Facebook">
+        <img src="logo-facebook.png">
         <div><strong>Facebook</strong><br>7.7k followers</div>
       </a>
 
       <a class="social-card" href="https://www.tiktok.com/@angelsptl" target="_blank">
-        <img src="logo-tiktok.png" alt="TikTok">
+        <img src="logo-tiktok.png">
         <div><strong>TikTok</strong><br>1k followers</div>
       </a>
 
       <a class="social-card" href="https://www.instagram.com/imastyrofoamcup" target="_blank">
-        <img src="logo-instagram.png" alt="Instagram">
+        <img src="logo-instagram.png">
         <div><strong>Instagram</strong><br>477 followers</div>
       </a>
 
       <!-- LINKEDIN USING PROFILE PHOTO -->
       <a class="social-card" href="https://www.linkedin.com/in/angel-sapotalo-084b8a2a6" target="_blank">
-        <img src="profile.png" alt="LinkedIn Profile">
+        <img src="profile.png">
         <div><strong>LinkedIn</strong><br>Professional Profile</div>
       </a>
 
+    </div>
+  </div>
+
+  <!-- TOOLS -->
+  <div class="card">
+    <h2>Tools I Use</h2>
+
+    <div class="tools-grid">
+      <img src="logo-google-workspace.png">
+      <img src="logo-microsoft.png">
+      <img src="logo-google-drive.png">
+      <img src="logo-salesforce.png">
+      <img src="logo-zendesk.png">
+      <img src="logo-ringcentral.png">
+      <img src="logo-zoom.png">
+      <img src="logo-google-meet.png">
+      <img src="logo-canva.png">
+      <img src="logo-html.png">
+      <img src="logo-chatgpt.png">
+      <img src="logo-copilot.png">
+      <img src="logo-gemini.png">
     </div>
   </div>
 
@@ -265,12 +259,10 @@ footer {
 
 <script>
 function enterPortfolio() {
-  const cover = document.getElementById("cover");
-  const main = document.getElementById("main");
-  cover.style.opacity = "0";
+  document.getElementById("cover").style.opacity = "0";
   setTimeout(() => {
-    cover.style.display = "none";
-    main.style.display = "block";
+    document.getElementById("cover").style.display = "none";
+    document.getElementById("main").style.display = "block";
   }, 800);
 }
 </script>
