@@ -182,6 +182,53 @@ header img {
   opacity: 1;
 }
 
+/* MODAL */
+#sampleModal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-box {
+  background: white;
+  border-radius: 14px;
+  padding: 32px;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+}
+
+.modal-box h2 {
+  margin-bottom: 20px;
+  color: #4f46e5;
+}
+
+.modal-box a {
+  display: block;
+  margin: 12px 0;
+  padding: 14px;
+  background: #4f46e5;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.modal-box a:hover {
+  background: #4338ca;
+}
+
+.close-modal {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #6b7280;
+  cursor: pointer;
+}
+
 /* FOOTER */
 footer {
   background: #111827;
@@ -211,12 +258,12 @@ footer {
 <header>
   <img src="profile.png" alt="Profile photo">
   <h1>Angel F. Sapotalo</h1>
-  <p>Virtual Assistant • Customer Support • Admin &amp; CRM</p>
+  <p>Virtual Assistant • Customer Support • Admin & CRM</p>
 
   <div class="action-buttons">
     <a href="https://drive.google.com/file/d/1tP_2klxBWeUAc00AbM1UR077ywsF6olz/view" target="_blank">Resume</a>
     <a href="https://drive.google.com/file/d/1ASqWyV_HgC3MsdUBcek-4-CDCOkHOYHL/view" target="_blank">Cover Letter</a>
-    <a href="https://tinyurl.com/4bxkrux4" target="_blank">Sample Works</a>
+    <a href="javascript:void(0)" onclick="openSampleWorks()">Sample Works</a>
     <a href="experience.html">Experience</a>
   </div>
 </header>
@@ -228,19 +275,14 @@ footer {
     <h2>About Me</h2>
     <p>
       I’m Angel Sapotalo, a dedicated Virtual Assistant who genuinely enjoys helping people and
-      supporting businesses behind the scenes. I understand how important it is to have someone
-      reliable you can trust with your day‑to‑day tasks, and I take that responsibility seriously.
+      supporting businesses behind the scenes.
     </p>
     <p>
-      I bring experience in customer support, administrative work, and daily operations, but what
-      truly sets me apart is how I work — with honesty, care, and clear communication. I don’t
-      believe in cutting corners or doing things halfway. I treat my clients’ businesses with the
-      same respect and commitment I would give my own.
+      I bring experience in customer support, administrative work, and daily operations, guided by
+      honesty, care, and clear communication.
     </p>
     <p>
-      I may not claim to know everything, but I am always willing to learn, improve, and give my best.
-      If you’re looking for someone dependable, proactive, and genuinely invested in helping your
-      business run smoothly, I would love to work with you.
+      I’m always willing to learn, improve, and give my best to help businesses run smoothly.
     </p>
   </div>
 
@@ -248,27 +290,25 @@ footer {
   <div class="card">
     <h2>Social Media Presence</h2>
     <div class="social-grid">
-
       <a class="social-card" href="https://www.facebook.com/angelsptl" target="_blank">
-        <img src="logo-facebook.png" alt="Facebook">
+        <img src="logo-facebook.png">
         <div><strong>Facebook</strong><br>7.7k followers</div>
       </a>
 
       <a class="social-card" href="https://www.tiktok.com/@angelsptl" target="_blank">
-        <img src="logo-tiktok.png" alt="TikTok">
+        <img src="logo-tiktok.png">
         <div><strong>TikTok</strong><br>1k followers</div>
       </a>
 
       <a class="social-card" href="https://www.instagram.com/imastyrofoamcup" target="_blank">
-        <img src="logo-instagram.png" alt="Instagram">
+        <img src="logo-instagram.png">
         <div><strong>Instagram</strong><br>477 followers</div>
       </a>
 
       <a class="social-card" href="https://www.linkedin.com/in/angel-sapotalo-084b8a2a6" target="_blank">
-        <img src="profile.png" alt="LinkedIn">
+        <img src="profile.png">
         <div><strong>LinkedIn</strong><br>Professional Profile</div>
       </a>
-
     </div>
   </div>
 
@@ -276,28 +316,45 @@ footer {
   <div class="card">
     <h2>Tools I Use</h2>
     <div class="tools-grid">
-      <img src="logo-google-workspace.png" alt="Google Workspace">
-      <img src="logo-microsoft.png" alt="Microsoft">
-      <img src="logo-google-drive.png" alt="Google Drive">
-      <img src="logo-salesforce.png" alt="Salesforce">
-      <img src="logo-zendesk.png" alt="Zendesk">
-      <img src="logo-ringcentral.png" alt="RingCentral">
-      <img src="logo-zoom.png" alt="Zoom">
-      <img src="logo-google-meet.png" alt="Google Meet">
-      <img src="logo-canva.png" alt="Canva">
-      <img src="logo-html.png" alt="HTML">
-      <img src="logo-chatgpt.png" alt="ChatGPT">
-      <img src="logo-copilot.png" alt="Copilot">
-      <img src="logo-gemini.png" alt="Gemini">
+      <img src="logo-google-workspace.png">
+      <img src="logo-microsoft.png">
+      <img src="logo-google-drive.png">
+      <img src="logo-salesforce.png">
+      <img src="logo-zendesk.png">
+      <img src="logo-ringcentral.png">
+      <img src="logo-zoom.png">
+      <img src="logo-google-meet.png">
+      <img src="logo-canva.png">
+      <img src="logo-html.png">
+      <img src="logo-chatgpt.png">
+      <img src="logo-copilot.png">
+      <img src="logo-gemini.png">
     </div>
   </div>
 
 </div>
-ac
+
 <footer>
   © 2026 Angel Sapotalo · angelsptl
 </footer>
 
+</div>
+
+<!-- SAMPLE WORKS MODAL -->
+<div id="sampleModal">
+  <div class="modal-box">
+    <h2>Sample Works</h2>
+
+    <a href="https://tinyurl.com/4bxkrux4" target="_blank">
+      Moonlight Café – Canva Design
+    </a>
+
+    <a href="https://angelsptl.github.io/sales-tracker/" target="_blank">
+      Sales & Revenue Tracker
+    </a>
+
+    <div class="close-modal" onclick="closeSampleWorks()">Close</div>
+  </div>
 </div>
 
 <script>
@@ -308,7 +365,16 @@ function enterPortfolio() {
     document.getElementById("main").style.display = "block";
   }, 800);
 }
+
+function openSampleWorks() {
+  document.getElementById("sampleModal").style.display = "flex";
+}
+
+function closeSampleWorks() {
+  document.getElementById("sampleModal").style.display = "none";
+}
 </script>
 
 </body>
 </html>
+``
