@@ -6,10 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+/* BASE */
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #f5f7fb;
+  background: linear-gradient(180deg, #f9fafb 0%, #eef2f7 60%, #fdfefe 100%);
   color: #1f2937;
 }
 
@@ -17,7 +18,7 @@ body {
 #cover {
   position: fixed;
   inset: 0;
-  background: #f5f7fb;
+  background: linear-gradient(135deg, #eef2ff, #fdf2f8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,18 +47,18 @@ body {
 }
 
 .enter-btn {
-  padding: 12px 32px;
-  background: #4f46e5;
+  padding: 14px 36px;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
+  box-shadow: 0 12px 28px rgba(79,70,229,0.35);
 }
 
 .enter-btn:hover {
-  background: #4338ca;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 /* MAIN */
@@ -73,7 +74,7 @@ body {
 
 /* HEADER */
 header {
-  background: linear-gradient(135deg, #6366f1, #38bdf8);
+  background: linear-gradient(135deg, #4f46e5, #6366f1, #60a5fa);
   color: white;
   text-align: center;
   padding: 60px 20px;
@@ -85,6 +86,7 @@ header img {
   border-radius: 50%;
   border: 5px solid white;
   object-fit: cover;
+  box-shadow: 0 20px 40px rgba(255,255,255,0.4);
 }
 
 .action-buttons {
@@ -95,17 +97,17 @@ header img {
   display: inline-block;
   margin: 8px;
   padding: 12px 26px;
-  background: white;
+  background: linear-gradient(135deg, #ffffff, #eef2ff);
   color: #4f46e5;
   font-weight: 600;
   font-size: 13px;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
   transition: 0.3s;
 }
 
 .action-buttons a:hover {
-  background: #eef2ff;
+  background: linear-gradient(135deg, #eef2ff, #e0e7ff);
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(79,70,229,0.25);
 }
@@ -118,12 +120,13 @@ header img {
 }
 
 .card {
-  background: white;
-  border-radius: 14px;
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 18px;
   padding: 32px;
   margin-bottom: 32px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   transition: 0.3s;
+  border-left: 5px solid #6366f1;
 }
 
 .card:hover {
@@ -132,6 +135,32 @@ header img {
 
 .card h2 {
   color: #4f46e5;
+}
+
+/* SERVICES */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: linear-gradient(145deg, #ffffff, #f1f5ff);
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 10px 22px rgba(79,70,229,0.15);
+}
+
+/* WHY HIRE ME */
+.why-hire {
+  text-align: center;
+  background: linear-gradient(135deg, #6366f1, #60a5fa);
+  color: white;
+  padding: 46px 28px;
+  border-radius: 22px;
+  margin-bottom: 32px;
+  font-size: 15px;
 }
 
 /* SOCIALS */
@@ -145,6 +174,7 @@ header img {
   display: flex;
   align-items: center;
   gap: 15px;
+  background: white;
   border: 1px solid #e5e7eb;
   border-radius: 12px;
   padding: 16px;
@@ -155,7 +185,7 @@ header img {
 
 .social-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 25px rgba(99,102,241,0.2);
+  box-shadow: 0 12px 25px rgba(99,102,241,0.25);
   border-color: #6366f1;
 }
 
@@ -173,13 +203,13 @@ header img {
 
 .tools-grid img {
   max-width: 70px;
-  opacity: 0.85;
+  opacity: 0.95;
   transition: 0.3s;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.12));
 }
 
 .tools-grid img:hover {
   transform: scale(1.15);
-  opacity: 1;
 }
 
 /* MODAL */
@@ -194,8 +224,8 @@ header img {
 }
 
 .modal-box {
-  background: white;
-  border-radius: 14px;
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 16px;
   padding: 32px;
   max-width: 420px;
   width: 90%;
@@ -203,35 +233,12 @@ header img {
 }
 
 .modal-box h2 {
-  margin-bottom: 20px;
   color: #4f46e5;
-}
-
-.modal-box a {
-  display: block;
-  margin: 12px 0;
-  padding: 14px;
-  background: #4f46e5;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.modal-box a:hover {
-  background: #4338ca;
-}
-
-.close-modal {
-  margin-top: 16px;
-  font-size: 13px;
-  color: #6b7280;
-  cursor: pointer;
 }
 
 /* FOOTER */
 footer {
-  background: #111827;
+  background: linear-gradient(135deg, #111827, #1f2937);
   color: #d1d5db;
   text-align: center;
   padding: 25px;
@@ -270,82 +277,83 @@ footer {
 
 <div class="container">
 
-  <!-- ABOUT ME (ORIGINAL – FULL TEXT) -->
-  <div class="card">
-    <h2>About Me</h2>
-    <p>
-      I’m Angel Sapotalo, a dedicated Virtual Assistant who genuinely enjoys helping people and
-      supporting businesses behind the scenes. I understand how important it is to have someone
-      reliable you can trust with your day‑to‑day tasks, and I take that responsibility seriously.
-    </p>
-    <p>
-      I bring experience in customer support, administrative work, and daily operations, but what
-      truly sets me apart is how I work — with honesty, care, and clear communication. I don’t
-      believe in cutting corners or doing things halfway. I treat my clients’ businesses with the
-      same respect and commitment I would give my own.
-    </p>
-    <p>
-      I may not claim to know everything, but I am always willing to learn, improve, and give my best.
-      If you’re looking for someone dependable, proactive, and genuinely invested in helping your
-      business run smoothly, I would love to work with you.
-    </p>
+<!-- ABOUT ME -->
+<div class="card">
+  <h2>About Me</h2>
+  <p>I’m Angel Sapotalo, a dedicated Virtual Assistant who genuinely enjoys helping people and supporting businesses behind the scenes. I understand how important it is to have someone reliable you can trust with your day‑to‑day tasks, and I take that responsibility seriously.</p>
+  <p>I bring experience in customer support, administrative work, and daily operations, but what truly sets me apart is how I work — with honesty, care, and clear communication. I don’t believe in cutting corners or doing things halfway. I treat my clients’ businesses with the same respect and commitment I would give my own.</p>
+  <p>I may not claim to know everything, but I am always willing to learn, improve, and give my best. If you’re looking for someone dependable, proactive, and genuinely invested in helping your business run smoothly, I would love to work with you.</p>
+</div>
+
+<!-- SERVICES -->
+<div class="card">
+  <h2>Services I Offer</h2>
+  <div class="services-grid">
+    <div class="service-card"><strong>Customer Support</strong><br>Email, chat, CRM management</div>
+    <div class="service-card"><strong>Administrative Support</strong><br>Data entry, reports, scheduling</div>
+    <div class="service-card"><strong>E‑commerce VA</strong><br>Orders, listings, customer follow‑ups</div>
   </div>
+</div>
 
-  <!-- SOCIAL MEDIA -->
-  <div class="card">
-    <h2>Social Media Presence</h2>
-    <div class="social-grid">
-      <a class="social-card" href="https://www.facebook.com/angelsptl" target="_blank">
-        <img src="logo-facebook.png" alt="Facebook">
-        <div><strong>Facebook</strong><br>7.7k followers</div>
-      </a>
+<!-- WHY HIRE ME -->
+<div class="why-hire">
+  <strong>Why Hire Me?</strong><br>
+  Reliable • Communicative • Detail‑oriented • I treat your business like my own
+</div>
 
-      <a class="social-card" href="https://www.tiktok.com/@angelsptl" target="_blank">
-        <img src="logo-tiktok.png" alt="TikTok">
-        <div><strong>TikTok</strong><br>1k followers</div>
-      </a>
-
-      <a class="social-card" href="https://www.instagram.com/imastyrofoamcup" target="_blank">
-        <img src="logo-instagram.png" alt="Instagram">
-        <div><strong>Instagram</strong><br>477 followers</div>
-      </a>
-
-      <a class="social-card" href="https://www.linkedin.com/in/angel-sapotalo-084b8a2a6" target="_blank">
-        <img src="profile.png" alt="LinkedIn">
-        <div><strong>LinkedIn</strong><br>Professional Profile</div>
-      </a>
-    </div>
+<!-- SOCIAL MEDIA -->
+<div class="card">
+  <h2>Social Media Presence</h2>
+  <div class="social-grid">
+    <a class="social-card" href="https://www.facebook.com/angelsptl" target="_blank">
+      <img src="logo-facebook.png">
+      <div><strong>Facebook</strong><br>7.7k followers</div>
+    </a>
+    <a class="social-card" href="https://www.tiktok.com/@angelsptl" target="_blank">
+      <img src="logo-tiktok.png">
+      <div><strong>TikTok</strong><br>1k followers</div>
+    </a>
+    <a class="social-card" href="https://www.instagram.com/imastyrofoamcup" target="_blank">
+      <img src="logo-instagram.png">
+      <div><strong>Instagram</strong><br>477 followers</div>
+    </a>
+    <a class="social-card" href="https://www.linkedin.com/in/angel-sapotalo-084b8a2a6" target="_blank">
+      <img src="profile.png">
+      <div><strong>LinkedIn</strong><br>Professional Profile</div>
+    </a>
   </div>
+</div>
 
-  <!-- TOOLS -->
-  <div class="card">
-    <h2>Tools I Use</h2>
-    <div class="tools-grid">
-      <img src="logo-google-workspace.png">
-      <img src="logo-microsoft.png">
-      <img src="logo-google-drive.png">
-      <img src="logo-salesforce.png">
-      <img src="logo-zendesk.png">
-      <img src="logo-ringcentral.png">
-      <img src="logo-zoom.png">
-      <img src="logo-google-meet.png">
-      <img src="logo-canva.png">
-      <img src="logo-html.png">
-      <img src="logo-chatgpt.png">
-      <img src="logo-copilot.png">
-      <img src="logo-gemini.png">
-    </div>
+<!-- TOOLS -->
+<div class="card">
+  <h2>Tools I Use</h2>
+  <div class="tools-grid">
+    <img src="logo-google-workspace.png">
+    <img src="logo-microsoft.png">
+    <img src="logo-google-drive.png">
+    <img src="logo-salesforce.png">
+    <img src="logo-zendesk.png">
+    <img src="logo-ringcentral.png">
+    <img src="logo-zoom.png">
+    <img src="logo-google-meet.png">
+    <img src="logo-canva.png">
+    <img src="logo-html.png">
+    <img src="logo-chatgpt.png">
+    <img src="logo-copilot.png">
+    <img src="logo-gemini.png">
+    <img src="logo-monday.png">
+    <img src="logo-teams.png">
+    <img src="logo-notion.png">
   </div>
+</div>
 
 </div>
 
-<footer>
-  © 2026 Angel Sapotalo · angelsptl
-</footer>
+<footer>© 2026 Angel Sapotalo · angelsptl</footer>
 
 </div>
 
-<!-- SAMPLE WORKS MODAL -->
+<!-- MODAL -->
 <div id="sampleModal">
   <div class="modal-box">
     <h2>Sample Works</h2>
