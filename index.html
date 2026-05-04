@@ -212,6 +212,31 @@ header img {
   transform: scale(1.15);
 }
 
+/* ✅ CTA – ADDED */
+.cta-section {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  text-align: center;
+  padding: 48px 28px;
+  border-radius: 22px;
+  margin-bottom: 32px;
+}
+
+.cta-section p {
+  margin: 12px auto 24px;
+  max-width: 600px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background: white;
+  color: #4f46e5;
+  font-weight: 600;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
 /* MODAL */
 #sampleModal {
   display: none;
@@ -297,8 +322,18 @@ footer {
 
 <!-- WHY HIRE ME -->
 <div class="why-hire">
-  <strong>Why Hire Me?</strong><br>
-  Reliable • Communicative • Detail‑oriented • I treat your business like my own
+  <strong>Why Hire Me?</strong><br><br>
+  You need someone you can trust to handle tasks without constant supervision.
+  I focus on accuracy, clear communication, and consistent support.
+  When you work with me, tasks are done properly, deadlines are respected,
+  and you gain more time to focus on growing your business.
+</div>
+
+<!-- RATE -->
+<div class="card" style="text-align:center;">
+  <h2>My Rate</h2>
+  <h1 style="color:#4f46e5;">$5–$10 / hour</h1>
+  <p><strong>Part‑time Virtual Assistant</strong></p>
 </div>
 
 <!-- SOCIAL MEDIA -->
@@ -327,6 +362,13 @@ footer {
 <!-- TOOLS -->
 <div class="card">
   <h2>Tools I Use</h2>
+
+  <p style="max-width:720px; margin-bottom:24px;">
+    I use these tools to keep business operations organized, data accurate,
+    and communication consistent. They help me support daily tasks efficiently
+    so business owners can focus on growth instead of admin work.
+  </p>
+
   <div class="tools-grid">
     <img src="logo-google-workspace.png">
     <img src="logo-microsoft.png">
@@ -337,7 +379,7 @@ footer {
     <img src="logo-zoom.png">
     <img src="logo-google-meet.png">
     <img src="logo-canva.png">
-    <img src="logo-html.png">
+    <img src="logo-outlook.png">
     <img src="logo-chatgpt.png">
     <img src="logo-copilot.png">
     <img src="logo-gemini.png">
@@ -347,17 +389,23 @@ footer {
   </div>
 </div>
 
+<!-- ✅ LET’S WORK TOGETHER (ADDED IN CORRECT PLACE) -->
+<div class="cta-section">
+  <h2>Let’s Work Together</h2>
+  <p>I respond promptly and handle tasks with accuracy and care.</p>
+  <a href="contact.html" class="cta-btn">Contact Me</a>
 </div>
 
-<footer>© 2026 Angel Sapotalo · angelsptl</footer>
+</div>
 
+<footer>© 2026 Angel Virtual Assistant Services</footer>
 </div>
 
 <!-- MODAL -->
 <div id="sampleModal">
   <div class="modal-box">
     <h2>Sample Works</h2>
-    <a href="https://tinyurl.com/4bxkrux4" target="_blank">Moonlight Café – Canva Design</a>
+    <a href="https://tinyurl.com/4bxkrux4" target="_blank">Moonlight Café – Canva Design</a><br><br>
     <a href="https://angelsptl.github.io/sales-tracker/" target="_blank">Sales & Revenue Tracker</a>
     <div class="close-modal" onclick="closeSampleWorks()">Close</div>
   </div>
@@ -371,11 +419,9 @@ function enterPortfolio() {
     document.getElementById("main").style.display = "block";
   }, 800);
 }
-
 function openSampleWorks() {
   document.getElementById("sampleModal").style.display = "flex";
 }
-
 function closeSampleWorks() {
   document.getElementById("sampleModal").style.display = "none";
 }
